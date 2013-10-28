@@ -41,14 +41,19 @@ def read(digits, dataset = "training", path = "."):
     return images, labels
 print "SUCCESS"
 
-#images, labels = read([2], 'training')
+images, labels = read([2], 'training')
 #print images[0]
-'''
+
 #Draw "average" 2
-imshow(images.mean(axis=0), cmap=cm.gray)
+#imshow(images.mean(axis=0), cmap=cm.gray)
 #Draw a 2
-imshow(images[0], cmap=cm.gray)
-show()
-'''
+#imshow(images[0], cmap=cm.gray)
+#show()
+#imshow(images[1], cmap=cm.gray)
+#show()
+#imshow(images[2], cmap=cm.gray)
+#show()
+
+
 
 
