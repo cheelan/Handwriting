@@ -3,7 +3,7 @@ import os, struct
 from array import array as pyarray
 from pylab import *
 from numpy import *
-
+print "FAILURE"
 def read(digits, dataset = "training", path = "."):
     """
     Loads MNIST files into 3D numpy arrays
@@ -29,7 +29,6 @@ def read(digits, dataset = "training", path = "."):
     magic_nr, size, rows, cols = struct.unpack(">IIII", fimg.read(16))
     img = pyarray("B", fimg.read())
     fimg.close()
-
     ind = [ k for k in xrange(size) if lbl[k] in digits ]
     N = len(ind)
 
@@ -40,11 +39,16 @@ def read(digits, dataset = "training", path = "."):
         labels[i] = lbl[ind[i]]
 
     return images, labels
+print "SUCCESS"
 
-
-images, labels = read([2], 'training')
-#Print "average" 2
+#images, labels = read([2], 'training')
+#print images[0]
+'''
+#Draw "average" 2
 imshow(images.mean(axis=0), cmap=cm.gray)
-#Print a 2
+#Draw a 2
 imshow(images[0], cmap=cm.gray)
 show()
+'''
+
+
