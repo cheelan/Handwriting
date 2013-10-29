@@ -28,23 +28,32 @@ def to_svm_format(matrix, label):
       id += 1
   return vector[:-1] #Skip the last whitespace
 
-def load_data():
-  images1, labels1 = read_data.read([1])
-  images2, labels2 = read_data.read([2])
-  ones = len(images1)
-  with open('svm_train12.txt', 'w') as f:
-    for i in images1:
-      f.write(to_svm_format(i, -1) + "\n")
-    print "Done 1s"
-    for i in images2:
-      f.write(to_svm_format(i, 1) + "\n")
-    print "Done 2s"
-  
+#For each digit, create a text file in SVMLight format containing all examples of that digit labeled as 1
+#and all other examples labeled as -1
+def load_data(digits):
+  images = []
+  for i in xrange(len(digits)):
+    images.append(read_data.read([digits[i]], 'training')[0])
+  for i in xrange(len(digits)):
+    target_images = images[i]
+    rest_images = images[:i] + images[i+1:]
+    with open('svm_train' + str(digits[i]) + '.txt', 'w') as f:
+      for image in target_images:
+        f.write(to_svm_format(image, 1) + "\n")
+      for num in rest_images:
+        for image in num:
+          f.write(to_svm_format(image, -1) + "\n")
+    print "Done " + str(digits[i])
 
-  twos = len(images2)
-
-  return ones, twos
-
+def partition(mydigit, images, labels):
+  mydigitSet = []
+  rest = []
+  for i in xrange(len(labels)):
+    if labels[i] == mydigit:
+      mydigitSet.append(images[i])
+    else:
+      rest.append(images[i])
+  return (mydigitSet, rest)
 def get_accuracy(real, guesses):
   correct = 0
   for i, ans in enumerate(real):
@@ -57,17 +66,17 @@ def get_accuracy(real, guesses):
       correct += 1
   return float(correct) / float(len(real))
 
-#ones, twos = load_data()
-ones = 6742
-twos = 12700 - 6742
-learn("svm_train12.txt")
-print "Done learning"
-guesses = classify("svm_train12.txt", "output.txt")
-real = [-1] * ones + [1] * twos
-print len(real)
-print len(guesses)
+load_data(range(10))
+#ones = 6742
+#twos = 12700 - 6742
+#learn("svm_train12.txt")
+#print "Done learning"
+#guesses = classify("svm_train12.txt", "output.txt")
+#real = [-1] * ones + [1] * twos
+#print len(real)
+#print len(guesses)
 
-print get_accuracy(real, guesses)
+#print get_accuracy(real, guesses)
 #images, labels = read_data.read([2])
 #s = to_svm_format(images[0], 1)
 #print(len(s))

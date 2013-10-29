@@ -39,9 +39,7 @@ def read(digits, dataset = "training", path = "."):
         labels[i] = lbl[ind[i]]
 
     return images, labels
-print "SUCCESS"
 
-images, labels = read([2], 'training')
 #print images[0]
 
 #Draw "average" 2
