@@ -15,8 +15,8 @@ def read(digits, dataset = "training", path = "."):
         fname_img = 'data/train-images.txt'
         fname_lbl = 'data/train-labels.txt'
     elif dataset is "testing":
-        fname_img = os.path.join(path, 'data/t10k-images-idx3-ubyte')
-        fname_lbl = os.path.join(path, 'data/t10k-labels-idx1-ubyte')
+        fname_img = os.path.join(path, 'data/test-images.txt')
+        fname_lbl = os.path.join(path, 'data/test-labels.txt')
     else:
         raise ValueError, "dataset must be 'testing' or 'training'"
 
