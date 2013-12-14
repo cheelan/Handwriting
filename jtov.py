@@ -11,7 +11,10 @@ def jtov(filename):
 	finalF.save("gray" + filename)
 	l = list(finalF.getdata())
 	print len(l)
-	print otsu.otsu(l)
+	finalL = [0] * len(l)
+	for i in range(len(l)):
+		finalL[i] = 255 - l[i]
+	print otsu.otsu(finalL)
 
 
 jtov("photo.JPG")
