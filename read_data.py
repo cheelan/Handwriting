@@ -3,7 +3,7 @@ import os, struct
 from array import array as pyarray
 from pylab import *
 from numpy import *
-print "FAILURE"
+
 def read(digits, dataset = "training", path = "."):
     """
     Loads MNIST files into 3D numpy arrays

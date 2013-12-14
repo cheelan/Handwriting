@@ -5,7 +5,7 @@ from sklearn import preprocessing
 import read_data
 '''
 Things to experiment with 
--Use pure black/white based on thresholding
+-Use pure black/white based on thresholding http://en.wikipedia.org/wiki/Otsu%27s_Method
 
 for SVMs:
 -Kernels
