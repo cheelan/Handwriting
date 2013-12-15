@@ -1,0 +1,32 @@
+Testing SVM d = 1 0.9098
+Testing SVM d = 2 0.8427
+Testing SVM d = 3 0.1946
+Testing SVM d = 4 0.1135
+Testing SVM d = 5 0.1135
+Testing random forests num_estimators = 1 max depth = 2 0.3277
+Testing random forests num_estimators = 1 max depth = 4 0.4528
+Testing random forests num_estimators = 1 max depth = 8 0.6684
+Testing random forests num_estimators = 1 max depth = 16 0.7623
+Testing random forests num_estimators = 1 max depth = 32 0.7553
+Testing random forests num_estimators = 10 max depth = 2 0.4917
+Testing random forests num_estimators = 10 max depth = 4 0.7128
+Testing random forests num_estimators = 10 max depth = 8 0.8791
+Testing random forests num_estimators = 10 max depth = 16 0.9164
+Testing random forests num_estimators = 10 max depth = 32 0.9205
+Testing random forests num_estimators = 50 max depth = 2 0.5887
+Testing random forests num_estimators = 50 max depth = 4 0.7423
+Testing random forests num_estimators = 50 max depth = 8 0.9027
+Testing random forests num_estimators = 50 max depth = 16 0.9473
+Testing random forests num_estimators = 50 max depth = 32 0.9467
+Testing random forests num_estimators = 100 max depth = 2 0.5525
+Testing random forests num_estimators = 100 max depth = 4 0.7504
+Testing random forests num_estimators = 100 max depth = 8 0.9117
+Testing random forests num_estimators = 100 max depth = 16 0.9504
+Testing random forests num_estimators = 100 max depth = 32 0.9505
+Testing decision trees max depth = 2 0.3324
+Testing decision trees max depth = 4 0.5659
+Testing decision trees max depth = 8 0.7692
+Testing decision trees max depth = 16 0.8064
+Testing decision trees max depth = 32 0.8021
+Testing decision trees max depth = 64 0.8003
+Testing decision trees max depth = 128 0.8062
