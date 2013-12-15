@@ -4,17 +4,29 @@ import cProfile
 import pylab as pl
 import otsu
 import numpy
+import Image
 #See http://scikit-learn.org/stable/modules/generated/sklearn.cross_validation.cross_val_score.html
 from sklearn import cross_validation
 from sklearn import svm
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import ExtraTreesClassifier
 
-
 #Read dataset
 train_images_gray, train_labels = read_data.read(range(10), 'training')
 test_images_gray, test_labels = read_data.read(range(10), 'testing')
 print "Done reading data"
+
+def generate_pngs():
+  for x in xrange(10):
+    test = train_images_gray[x]
+    test2 = []
+    for i in xrange(len(test)):
+      test2.append(numpy.uint8(255 - test[i]))
+    test2 = numpy.array(test2)
+    test2.shape = (28,28)
+    print test2
+    img = Image.fromarray(test2, 'L')
+    img.save('report/' +str(x) + '.png')
 
 def convert_bw(images):
   bw = []
@@ -38,7 +50,6 @@ def svms(images, labels, test_images, test_labels, degrees):
 #Doesn't necessarily use all of max_depth. TDIDT stops once all training examples are classified correctly
 def decision_trees(images, labels, test_images, test_labels, depths, showimage=False):
     for d in depths:
-      print d
       clf = DecisionTreeClassifier(max_depth = d)
       scores = clf.fit(images, labels).score(test_images, test_labels)
       print "Testing decision trees max depth = " + str(d) + " " + str(scores)
