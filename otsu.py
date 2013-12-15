@@ -1,3 +1,4 @@
+import numpy
 def otsu(image):
 	total = len(image)
 	histogram = [0] * 256
@@ -26,10 +27,9 @@ def otsu(image):
 			maximum = between
 			threshold = i
 
-	newImage = [0.] * total
+	newImage = [numpy.float64(0.)] * total
 
 	for i in range(total):
 		if image[i] > threshold:
-			newImage[i] = 1.
-
+			newImage[i] = numpy.float64(1.)
 	return newImage
