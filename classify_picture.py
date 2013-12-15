@@ -22,11 +22,11 @@ def classify(image):
         test = otsu.otsu(numpy.array(jtov.jtov(image)))
         clf = svm.SVC(kernel="poly", degree=1)
         clf.fit(train_images_bw[:10000], train_labels[:10000])
+        print clf.predict(test)
     else:
         test = numpy.array(jtov.jtov(image))
         clf = svm.SVC(kernel="poly", degree=2)
         clf.fit(train_images_gray[:10000], train_labels[:10000])
-	print test
-	print clf.predict(test)
+        print clf.predict(test)
 
 classify("photo.JPG")
