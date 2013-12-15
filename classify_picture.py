@@ -21,11 +21,11 @@ def classify(image):
         train_images_bw = convert_bw(train_images_gray)
         test = otsu.otsu(numpy.array(jtov.jtov(image)))
         clf = svm.SVC(kernel="poly", degree=1)
-        clf.fit(train_images_bw, train_labels)
+        clf.fit(train_images_bw[:10000], train_labels[:10000])
     else:
         test = numpy.array(jtov.jtov(image))
         clf = svm.SVC(kernel="poly", degree=2)
-        clf.fit(train_images_gray, train_labels)
+        clf.fit(train_images_gray[:10000], train_labels[:10000])
 	print test
 	print clf.predict(test)
 
