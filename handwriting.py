@@ -72,14 +72,15 @@ def random_forests(images, labels, test_images, test_labels, estimators, depths,
 
 
 #cProfile.run("svms(train_images[:10000], train_labels[:10000], [1], ['poly'])")
-print "BLACK WHITE"
-svms(train_images_bw[:10000], train_labels[:10000], test_images_bw, test_labels, [1,2,3,4,5])
-random_forests(train_images_bw[:10000], train_labels[:10000], test_images_bw, test_labels, [1, 10, 50, 100], [2, 4, 8, 16, 32], False)
-decision_trees(train_images_bw[:10000], train_labels[:10000], test_images_bw, test_labels, [2, 4, 8, 16, 32, 64, 128])
+# print "BLACK WHITE"
+# svms(train_images_bw[:10000], train_labels[:10000], test_images_bw, test_labels, [1,2,3,4,5])
+# random_forests(train_images_bw[:10000], train_labels[:10000], test_images_bw, test_labels, [1, 10, 50, 100], [2, 4, 8, 16, 32], False)
+# decision_trees(train_images_bw[:10000], train_labels[:10000], test_images_bw, test_labels, [2, 4, 8, 16, 32, 64, 128])
 
 # print "GRAYSCALE"
 # svms(train_images_gray[:10000], train_labels[:10000], test_images_gray, test_labels, [1,2,3,4,5])
 # random_forests(train_images_gray[:10000], train_labels[:10000], test_images_gray, test_labels, [1, 10, 50, 100], [2, 4, 8, 16, 32], False)
 # decision_trees(train_images_gray[:10000], train_labels[:10000], test_images_gray, test_labels, [2, 4, 8, 16, 32, 64, 128])
-
+random_forests(train_images_bw[:10000], train_labels[:10000], test_images_bw, test_labels, [100], [32], True)
+random_forests(train_images_gray[:10000], train_labels[:10000], test_images_gray, test_labels, [100], [32], True)
 
