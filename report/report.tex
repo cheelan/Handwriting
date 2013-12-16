@@ -106,8 +106,6 @@ The recognizer is trained and tested with the MNIST database of handwritten digi
 
 Each image matrix is flattened into a one-dimensional vector. Then, a copy of the vector is converted from grayscale to black and white using Otsu’s Method. These vectors are then sent to the learning algorithms, which use a sample of 10,000 examples for training. After learning models are generating, they are tested against 10,000 similarly formatted test vectors.
 
-[TODO maybe add a flow chart]]
-
 \section*{Results}
 \subsection*{Decision Trees}
 Decision trees are graphs where each node represents a decision that asks a question about a certain feature. If the query is satisfied, the algorithm goes down one branch, otherwise it goes down another. This process repeats until a leaf node containing a final decision is encountered. In practice, a small decision tree that fits training data well is preferred over a larger tree. The smaller tree is superior because even if it has a slightly lower training accuracy, it is likely to generalize better, as the larger tree is probably learning random noise that helps classify the training data, but does not generalize to the testing data. This failure of the larger tree is often referred to as overfitting. To find a sufficiently complex tree, we experiment with a variety of restrictions on the maximum depth of the tree.
@@ -148,7 +146,25 @@ S = -pP *\ log_2(pP) -pN * \log_2(pN)
     \end{tabular}
 \end{table}
 
-[graph curves. If desperate, show a sample tree]
+\begin{figure}[h]
+\centering
+\begin{subfigure}{.45\textwidth}
+  \centering
+  \includegraphics[width=1\linewidth]{GrayscaleDecisionTrees.jpg}
+  \caption{Grayscale Decision Trees}
+  \label{fig:sub1}
+\end{subfigure}%
+\hspace{2mm}
+\begin{subfigure}{.45\textwidth}
+  \centering
+  \includegraphics[width=1\linewidth]{BlackandWhiteDecisionTrees.jpg}
+  \caption{Black and White Decision Trees}
+  \label{fig:sub2}
+\end{subfigure}
+\caption{Decision Tree Results}
+\label{fig:test}
+\end{figure}
+
 Compared to a majority vote baseline, which has accuracy $0.1135$, all of our decision trees perform better at the $0.01$ signifiance level according to a one tailed $t$-test. There is no significant difference between the best grayscale decision tree and the best black and white decision tree. This suggests that the thresholds calculated during each decision on the grayscale tree are roughly as good at classifying the data as Otsu's method. Interestingly, no significant overfitting occurs. While the accuracy of the grayscale tree does decrease after a depth of $16$, it is not by a significant amount.
 
 \subsection*{Random Forests}
@@ -211,6 +227,25 @@ A variant of typical decision trees is to create a “forest” consisting of ma
     \end{tabular}
 \end{table}
 
+\begin{figure}[h]
+\centering
+\begin{subfigure}{.45\textwidth}
+  \centering
+  \includegraphics[width=1\linewidth]{GrayscaleRandomForestsMaxDepth32.jpg}
+  \caption{Grayscale Random Forests}
+  \label{fig:sub1}
+\end{subfigure}%
+\hspace{2mm}
+\begin{subfigure}{.45\textwidth}
+  \centering
+  \includegraphics[width=1\linewidth]{BlackandWhiteRandomForestsMaxDepth32.jpg}
+  \caption{Black and White Random Forests}
+  \label{fig:sub2}
+\end{subfigure}
+\caption{Random Forest Results}
+\label{fig:test}
+\end{figure}
+
 According to a one tailed $t$-test, there is no significant difference between the best grayscale random forest classifer and the best black and white random classifier. In general, increasing the number of estimators improves the accuracy of the classifier. This makes sense, because having more classifiers means that it is less likely the majority of them will be wrong. Interestingly, the classifiers do not follow the same overfitting curve as regular decision trees. This could be because the trees are using a different information gain algorithm, or it could be because the random nature of the forest makes overfitting instances rare. In comparison to the majority vote baseline with an accuracy of $0.1135$, every random forest classifier performs significantly better.
 
 During the random forest learning algorithm, each feature is given a value that represents how important that particular pixel is to determining the class of the number. The importances of each pixel can be graphed to produce a heat map showing which pixels reveal the most information about numbers.
@@ -227,7 +262,7 @@ During the random forest learning algorithm, each feature is given a value that 
 \begin{subfigure}{.4\textwidth}
   \centering
   \includegraphics[width=1\linewidth]{bw_importances.png}
-  \caption{Pixel Importances for BW Images}
+  \caption{Pixel Importances for Black and White Images}
   \label{fig:sub2}
 \end{subfigure}
 \end{figure}
@@ -268,6 +303,25 @@ It should be noted that the parameter that measures the tradeoff between the siz
     5      & 0.1135   \\ \hline
     \end{tabular}
 \end{table}
+
+\begin{figure}[h]
+\centering
+\begin{subfigure}{.45\textwidth}
+  \centering
+  \includegraphics[width=1\linewidth]{GrayscaleSVMs.jpg}
+  \caption{Grayscale SVMs}
+  \label{fig:sub1}
+\end{subfigure}%
+\hspace{2mm}
+\begin{subfigure}{.45\textwidth}
+  \centering
+  \includegraphics[width=1\linewidth]{BlackandWhiteSVMs.jpg}
+  \caption{Black and White SVMs}
+  \label{fig:sub2}
+\end{subfigure}
+\caption{SVM Results}
+\label{fig:test}
+\end{figure}
 
 Compared to a majority vote baseline, which has accuracy $0.1135$, all of the SVMs perform better at the $0.01$ signifiance level according to a one tailed $t$-test. In summary, the best SVM model for grayscale performed better than the best SVM model for black and white at the $0.05$ signifcance level. One possible explanation that grayscale performed better in SVMs is that the SVM learning algorithm weights each feature as it trains. This creates a more native thresholding algorithm than Otsu's method. Another interesting observation is that the black and white SVMs performed very poorly with higher degree kernels. This suggests that after converting an image to black and white, the data becomes more linear than when it was in full grayscale.
 
@@ -365,6 +419,25 @@ One drawback of machine learning algorithms is that they require a large amount 
     10000      & 0.9516   \\ \hline
     \end{tabular}
 \end{table}
+
+\begin{figure}[h]
+\centering
+\begin{subfigure}{.45\textwidth}
+  \centering
+  \includegraphics[width=1\linewidth]{GrayscaleSVMsExamples.jpg}
+  \caption{Grayscale SVMs with Reduced Training}
+  \label{fig:sub1}
+\end{subfigure}%
+\hspace{2mm}
+\begin{subfigure}{.45\textwidth}
+  \centering
+  \includegraphics[width=1\linewidth]{BlackandWhiteRandomForestsExamples.jpg}
+  \caption{Black and White Random Forests with Reduced Training}
+  \label{fig:sub2}
+\end{subfigure}
+\caption{Random Forest Results}
+\label{fig:test}
+\end{figure}
 
 Even with as few as 100 examples, both classifiers perform significantly better than the baseline accuracy. After about 1000 examples, the increase in training examples makes fairly little difference, and accuracy barely improves after 3000 examples. Interestingly, the learning curves are roughly the same, even though the underlying learning algorithms, SVMs and Random Forests, are different. This strongly suggests that the high number of training examples used in earlier experimentation was unnecessary, which makes more generalized handwriting recognition problems more tractable. 
 

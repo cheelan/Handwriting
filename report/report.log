@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.8.28)  16 DEC 2013 17:01
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.8.28)  16 DEC 2013 17:26
 entering extended mode
 **C:/Users/Chris/Documents/2014fa/cs4701/Handwriting/report/report.tex
 (C:/Users/Chris/Documents/2014fa/cs4701/Handwriting/report/report.tex
@@ -651,6 +651,51 @@ LaTeX Warning: Label `fig:sub2' multiply defined.
 LaTeX Warning: Label `sub@fig:sub2' multiply defined.
 
 
+LaTeX Warning: Label `fig:test' multiply defined.
+
+
+LaTeX Warning: Label `fig:sub1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub1' multiply defined.
+
+
+LaTeX Warning: Label `fig:sub2' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub2' multiply defined.
+
+
+LaTeX Warning: Label `fig:test' multiply defined.
+
+
+LaTeX Warning: Label `fig:sub1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub1' multiply defined.
+
+
+LaTeX Warning: Label `fig:sub2' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub2' multiply defined.
+
+
+LaTeX Warning: Label `fig:sub1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub1' multiply defined.
+
+
+LaTeX Warning: Label `fig:sub2' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub2' multiply defined.
+
+
+LaTeX Warning: Label `fig:test' multiply defined.
+
+
 LaTeX Warning: Label `fig:sub1' multiply defined.
 
 
@@ -673,6 +718,21 @@ LaTeX Warning: Label `fig:sub4' multiply defined.
 
 
 LaTeX Warning: Label `sub@fig:sub4' multiply defined.
+
+
+LaTeX Warning: Label `fig:test' multiply defined.
+
+
+LaTeX Warning: Label `fig:sub1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub1' multiply defined.
+
+
+LaTeX Warning: Label `fig:sub2' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub2' multiply defined.
 
 
 LaTeX Warning: Label `fig:test' multiply defined.
@@ -812,95 +872,169 @@ Missing character: There is no ô in font cmr12!
 2014fa/cs4701/Handwriting/report/0.png (PNG copy)> <C:/Users/Chris/Documents/20
 14fa/cs4701/Handwriting/report/1.png> <C:/Users/Chris/Documents/2014fa/cs4701/H
 andwriting/report/2.png> <C:/Users/Chris/Documents/2014fa/cs4701/Handwriting/re
-port/3.png>] [2]
+port/3.png>]
+<GrayscaleDecisionTrees.jpg, id=30, 562.1pt x 421.575pt>
+File: GrayscaleDecisionTrees.jpg Graphic file (type jpg)
+
+<use GrayscaleDecisionTrees.jpg>
+Package pdftex.def Info: GrayscaleDecisionTrees.jpg used on input line 153.
+(pdftex.def)             Requested size: 211.38832pt x 158.54051pt.
+
+<BlackandWhiteDecisionTrees.jpg, id=31, 562.1pt x 421.575pt>
+File: BlackandWhiteDecisionTrees.jpg Graphic file (type jpg)
+
+<use BlackandWhiteDecisionTrees.jpg>
+Package pdftex.def Info: BlackandWhiteDecisionTrees.jpg used on input line 160.
+
+(pdftex.def)             Requested size: 211.38832pt x 158.54051pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[2]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ú in font cmr12!
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ù in font cmr12!
- [3]
-[4] <gray_importances.png, id=51, 444.4605pt x 444.4605pt>
+ [3 <C:/Users/Chris/Documents/2014fa/cs4701/Handwriting/report/GrayscaleDecisio
+nTrees.jpg> <C:/Users/Chris/Documents/2014fa/cs4701/Handwriting/report/Blackand
+WhiteDecisionTrees.jpg>] [4]
+<GrayscaleRandomForestsMaxDepth32.jpg, id=56, 562.1pt x 421.575pt>
+File: GrayscaleRandomForestsMaxDepth32.jpg Graphic file (type jpg)
+
+<use GrayscaleRandomForestsMaxDepth32.jpg>
+Package pdftex.def Info: GrayscaleRandomForestsMaxDepth32.jpg used on input lin
+e 234.
+(pdftex.def)             Requested size: 211.38832pt x 158.54051pt.
+
+<BlackandWhiteRandomForestsMaxDepth32.jpg, id=57, 562.1pt x 421.575pt>
+File: BlackandWhiteRandomForestsMaxDepth32.jpg Graphic file (type jpg)
+
+<use BlackandWhiteRandomForestsMaxDepth32.jpg>
+Package pdftex.def Info: BlackandWhiteRandomForestsMaxDepth32.jpg used on input
+ line 241.
+(pdftex.def)             Requested size: 211.38832pt x 158.54051pt.
+ [5 <C:/Users/Chris/Documents/2014fa/cs4701/Handwriting/report/GrayscaleRandomF
+orestsMaxDepth32.jpg> <C:/Users/Chris/Documents/2014fa/cs4701/Handwriting/repor
+t/BlackandWhiteRandomForestsMaxDepth32.jpg>] <gray_importances.png, id=66, 444.
+4605pt x 444.4605pt>
 File: gray_importances.png Graphic file (type png)
 
 <use gray_importances.png>
-Package pdftex.def Info: gray_importances.png used on input line 222.
+Package pdftex.def Info: gray_importances.png used on input line 257.
 (pdftex.def)             Requested size: 187.89914pt x 187.89966pt.
 
-<bw_importances.png, id=52, 444.4605pt x 444.4605pt>
+<bw_importances.png, id=67, 444.4605pt x 444.4605pt>
 File: bw_importances.png Graphic file (type png)
  <use bw_importances.png>
-Package pdftex.def Info: bw_importances.png used on input line 229.
+Package pdftex.def Info: bw_importances.png used on input line 264.
 (pdftex.def)             Requested size: 187.89914pt x 187.89966pt.
 
-[5]
+[6 <C:/Users/Chris/Documents/2014fa/cs4701/Handwriting/report/gray_importances.
+png> <C:/Users/Chris/Documents/2014fa/cs4701/Handwriting/report/bw_importances.
+png>]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ò in font cmr12!
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ô in font cmr12!
- [6 <C:/Users/Chris/Documents/2014fa/cs4701/Handwriting/report/gray_importances
-.png> <C:/Users/Chris/Documents/2014fa/cs4701/Handwriting/report/bw_importances
-.png>] <mistake[3]_5.png, id=67, 63.23625pt x 63.23625pt>
-File: mistake[3]_5.png Graphic file (type png)
+ <GrayscaleSVMs.jpg, id=77, 562.1pt x 421.575pt>
+File: GrayscaleSVMs.jpg Graphic file (type jpg)
+ <use GrayscaleSVMs.jpg>
+Package pdftex.def Info: GrayscaleSVMs.jpg used on input line 311.
+(pdftex.def)             Requested size: 211.38832pt x 158.54051pt.
 
-<use mistake[3]_5.png>
-Package pdftex.def Info: mistake[3]_5.png used on input line 282.
-(pdftex.def)             Requested size: 23.48738pt x 23.48773pt.
- <mistake[7]_2.png, id=68, 63.23625pt x 63.23625pt>
-File: mistake[7]_2.png Graphic file (type png)
+<BlackandWhiteSVMs.jpg, id=78, 562.1pt x 421.575pt>
+File: BlackandWhiteSVMs.jpg Graphic file (type jpg)
 
-<use mistake[7]_2.png>
-Package pdftex.def Info: mistake[7]_2.png used on input line 289.
-(pdftex.def)             Requested size: 23.48738pt x 23.48773pt.
- <mistake[4]_9.png, id=69, 63.23625pt x 63.23625pt>
-File: mistake[4]_9.png Graphic file (type png)
-
-<use mistake[4]_9.png>
-Package pdftex.def Info: mistake[4]_9.png used on input line 296.
-(pdftex.def)             Requested size: 23.48738pt x 23.48773pt.
- <mistake[2]_4.png, id=70, 63.23625pt x 63.23625pt>
-File: mistake[2]_4.png Graphic file (type png)
-
-<use mistake[2]_4.png>
-Package pdftex.def Info: mistake[2]_4.png used on input line 302.
-(pdftex.def)             Requested size: 23.48738pt x 23.48773pt.
+<use BlackandWhiteSVMs.jpg>
+Package pdftex.def Info: BlackandWhiteSVMs.jpg used on input line 318.
+(pdftex.def)             Requested size: 211.38832pt x 158.54051pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[7] <confusion.png, id=80, 578.16pt x 433.62pt>
+<mistake[3]_5.png, id=79, 63.23625pt x 63.23625pt>
+File: mistake[3]_5.png Graphic file (type png)
+ <use mistake[3]_5.png>
+Package pdftex.def Info: mistake[3]_5.png used on input line 336.
+(pdftex.def)             Requested size: 23.48738pt x 23.48773pt.
+
+<mistake[7]_2.png, id=80, 63.23625pt x 63.23625pt>
+File: mistake[7]_2.png Graphic file (type png)
+ <use mistake[7]_2.png>
+Package pdftex.def Info: mistake[7]_2.png used on input line 343.
+(pdftex.def)             Requested size: 23.48738pt x 23.48773pt.
+
+<mistake[4]_9.png, id=81, 63.23625pt x 63.23625pt>
+File: mistake[4]_9.png Graphic file (type png)
+ <use mistake[4]_9.png>
+Package pdftex.def Info: mistake[4]_9.png used on input line 350.
+(pdftex.def)             Requested size: 23.48738pt x 23.48773pt.
+
+<mistake[2]_4.png, id=82, 63.23625pt x 63.23625pt>
+File: mistake[2]_4.png Graphic file (type png)
+ <use mistake[2]_4.png>
+Package pdftex.def Info: mistake[2]_4.png used on input line 356.
+(pdftex.def)             Requested size: 23.48738pt x 23.48773pt.
+
+[7] [8 <C:/Users/Chris/Documents/2014fa/cs4701/Handwriting/report/GrayscaleSVMs
+.jpg> <C:/Users/Chris/Documents/2014fa/cs4701/Handwriting/report/BlackandWhiteS
+VMs.jpg> <C:/Users/Chris/Documents/2014fa/cs4701/Handwriting/report/mistake[3]_
+5.png> <C:/Users/Chris/Documents/2014fa/cs4701/Handwriting/report/mistake[7]_2.
+png> <C:/Users/Chris/Documents/2014fa/cs4701/Handwriting/report/mistake[4]_9.pn
+g> <C:/Users/Chris/Documents/2014fa/cs4701/Handwriting/report/mistake[2]_4.png>
+] <confusion.png, id=109, 578.16pt x 433.62pt>
 File: confusion.png Graphic file (type png)
  <use confusion.png>
-Package pdftex.def Info: confusion.png used on input line 317.
+Package pdftex.def Info: confusion.png used on input line 371.
 (pdftex.def)             Requested size: 422.77664pt x 317.08252pt.
- [8 <C:/Users/Chris/Documents/2014fa/cs4701/Handwriting/report/mistake[3]_5.png
-> <C:/Users/Chris/Documents/2014fa/cs4701/Handwriting/report/mistake[7]_2.png> 
-<C:/Users/Chris/Documents/2014fa/cs4701/Handwriting/report/mistake[4]_9.png> <C
-:/Users/Chris/Documents/2014fa/cs4701/Handwriting/report/mistake[2]_4.png> <C:/
-Users/Chris/Documents/2014fa/cs4701/Handwriting/report/confusion.png>] [9]
+ [9 <C:/Users/Chris/Documents/2014fa/cs4701/Handwriting/report/confusion.png>]
+<GrayscaleSVMsExamples.jpg, id=117, 562.1pt x 421.575pt>
+File: GrayscaleSVMsExamples.jpg Graphic file (type jpg)
+
+<use GrayscaleSVMsExamples.jpg>
+Package pdftex.def Info: GrayscaleSVMsExamples.jpg used on input line 427.
+(pdftex.def)             Requested size: 211.38832pt x 158.54051pt.
+
+<BlackandWhiteRandomForestsExamples.jpg, id=118, 562.1pt x 421.575pt>
+File: BlackandWhiteRandomForestsExamples.jpg Graphic file (type jpg)
+
+<use BlackandWhiteRandomForestsExamples.jpg>
+Package pdftex.def Info: BlackandWhiteRandomForestsExamples.jpg used on input l
+ine 434.
+(pdftex.def)             Requested size: 211.38832pt x 158.54051pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 
 AED: lastpage setting LastPage
-[10]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 373.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 373.
- (C:\Users\Chris\Documents\2014fa\cs4701\Handwriting\report\report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 373.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 373.
+[10] [11 <C:/Users/Chris/Documents/2014fa/cs4701/Handwriting/report/GrayscaleSV
+MsExamples.jpg> <C:/Users/Chris/Documents/2014fa/cs4701/Handwriting/report/Blac
+kandWhiteRandomForestsExamples.jpg>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 446.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 446.
+
+(C:\Users\Chris\Documents\2014fa\cs4701\Handwriting\report\report.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 446.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 446.
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 373.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 446.
  ) 
 Here is how much of TeX's memory you used:
- 17165 strings out of 493921
- 299385 string characters out of 3144876
+ 17219 strings out of 493921
+ 300849 string characters out of 3144876
  404517 words of memory out of 3000000
- 20112 multiletter control sequences out of 15000+200000
+ 20144 multiletter control sequences out of 15000+200000
  10103 words of font info for 38 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  56i,9n,55p,1470b,523s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -911,9 +1045,9 @@ rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Prog
 ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program
  Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Fil
 es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on report.pdf (10 pages, 186027 bytes).
+Output written on report.pdf (11 pages, 299734 bytes).
 PDF statistics:
- 142 PDF objects out of 1000 (max. 8388607)
- 42 named destinations out of 1000 (max. 500000)
- 68 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 169 PDF objects out of 1000 (max. 8388607)
+ 55 named destinations out of 1000 (max. 500000)
+ 108 words of extra memory for PDF output out of 10000 (max. 10000000)
 
