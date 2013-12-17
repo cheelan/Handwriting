@@ -104,7 +104,7 @@ The recognizer is trained and tested with the MNIST database of handwritten digi
 \label{fig:test}
 \end{figure}
 
-Each image matrix is flattened into a one-dimensional vector. Then, a copy of the vector is converted from grayscale to black and white using Otsu’s Method. These vectors are then sent to the learning algorithms, which use a sample of 10,000 examples for training. After learning models are generating, they are tested against 10,000 similarly formatted test vectors.
+Each image matrix is flattened into a one-dimensional vector. Then, a copy of the vector is converted from grayscale to black and white using Otsu's Method. These vectors are then sent to the learning algorithms, which use a sample of 10,000 examples for training. After learning models are generating, they are tested against 10,000 similarly formatted test vectors.
 
 \section*{Results}
 \subsection*{Decision Trees}
@@ -442,6 +442,8 @@ One drawback of machine learning algorithms is that they require a large amount 
 Even with as few as 100 examples, both classifiers perform significantly better than the baseline accuracy. After about 1000 examples, the increase in training examples makes fairly little difference, and accuracy barely improves after 3000 examples. Interestingly, the learning curves are roughly the same, even though the underlying learning algorithms, SVMs and Random Forests, are different. This strongly suggests that the high number of training examples used in earlier experimentation was unnecessary, which makes more generalized handwriting recognition problems more tractable. 
 
 \section*{Conclusion}
+We have explored a variety of learning algorithms to approach the problem of handwritten digit recognition. Considering both grayscale and black and white images, we applied decision trees, random forests, and support vector machines, and achieved the best accuracy with SVMs with quadratic kernels. Overall, there was no significant difference between the best grayscale algorithms and the best black and white algorithms. With such high accuracies, we speculate that these algorithms could also generalize to recognizing all alphanumeric characters, instead of just digits. However, because multiclassification SVMs scale poorly with a large number of classes, it may be better to pursue random forests in future work. Finally, we showed evidence that a good classifier can exist even with relatively few training examples. This is useful for applications where large training sets do not exist, such as for languages with esoteric character sets.
+
 -Algorithms were very successful
 -Overall no significant difference between BW and grayscale
 -Generalize well to other digits, random forests better for that, no huge amounts of training necessary
