@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.8.28)  16 DEC 2013 19:27
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.8.28)  16 DEC 2013 19:31
 entering extended mode
 **C:/Users/Chris/Documents/2014fa/cs4701/Handwriting/report/report.tex
 (C:/Users/Chris/Documents/2014fa/cs4701/Handwriting/report/report.tex
@@ -1010,19 +1010,19 @@ AED: lastpage setting LastPage
 [11 <C:/Users/Chris/Documents/2014fa/cs4701/Handwriting/report/GrayscaleSVMsExa
 mples.jpg> <C:/Users/Chris/Documents/2014fa/cs4701/Handwriting/report/BlackandW
 hiteRandomForestsExamples.jpg>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 454.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 454.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 449.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 449.
 
 (C:\Users\Chris\Documents\2014fa\cs4701\Handwriting\report\report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 454.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 454.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 449.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 449.
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 454.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 449.
  ) 
 Here is how much of TeX's memory you used:
  17220 strings out of 493921
@@ -1039,7 +1039,7 @@ rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Prog
 ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program
  Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Fil
 es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on report.pdf (11 pages, 302524 bytes).
+Output written on report.pdf (11 pages, 295767 bytes).
 PDF statistics:
  170 PDF objects out of 1000 (max. 8388607)
  56 named destinations out of 1000 (max. 500000)
